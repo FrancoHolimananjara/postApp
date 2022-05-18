@@ -1,0 +1,6 @@
+User model:
+    sequelize model:create --attributes "username:string,lastname:string,firstname:string,email:string,password:string,attachment:string" --name User
+Post model:
+    sequelize model:create --attributes "UserId:integer,title:string,content:string,image:string,like:integer" --name Post
+LikedBy:
+    sequelize model:create --attributes "PostId:integer,UserId:integer" --name LikedBy
